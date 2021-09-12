@@ -28,7 +28,7 @@ fn change_string(s: &mut String) {  // accepts a mutable reference
 }
 
 // fn first_word(s: &String) -> &str {
-fn first_word(s: &str) -> &str {
+fn first_word(s: &str) -> &str {    // unlike the above, this enables the function to accept string literals and String instances
     let bytes = s.as_bytes();
 
     for(i, &item) in bytes.iter().enumerate(){
